@@ -1,14 +1,14 @@
+import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
 import Footer from "../components/Footer";
 
-export default function Home() {
+function Flavours() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>King Kong Ice Cream - We put the Kong in your IC</title>
+        <title>Flavours Fav - King Kong Ice Cream</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,24 +20,22 @@ export default function Home() {
             height={150}
             width={150}
           />
-          King Kong Ice Cream
+          Flavours!
         </h1>
 
-        <p className={styles.description}>
-          Get started by typing <code className={styles.code}>kkic start</code>
-        </p>
-
         <div className={styles.grid}>
-          <Link href="/flavours">
+          <Link href={"/"}>
             <div className={styles.card}>
-              <h3>Chocolate Smash &rarr;</h3>
-              <p>Our most popular flavour. Refreshed, delivered.</p>
+              <h3>Home</h3>
+              <p>Isn't it wonderful? All the loveliness. All the sparrows.</p>
             </div>
           </Link>
-
           <div className={styles.card}>
-            <h3>And the rest... &rarr;</h3>
-            <p>All the other bits you need to know about our operation</p>
+            <h3>Emus</h3>
+            <p>
+              One can never have enough Emu. Some insist on gravy, but I feel
+              that is just watering the aarmadio
+            </p>
           </div>
         </div>
       </main>
@@ -46,3 +44,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Flavours;
